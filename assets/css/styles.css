@@ -1,0 +1,196 @@
+/* Jovain Chisholm 000905188
+Feb 5, 2023  */
+/* Interactive JavaScript Challenge: Put Your Input to the Test */
+/* SA0001: I Jovain Chisholm, 000905188 certify that this material is
+ my original work. No other person's work has been used without due
+acknowledgement. I have not made my work available to anyone else.   */
+
+body {
+  background-color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  background-color: beige;
+  color: black;
+  padding: 2em;
+  padding-bottom: 0;
+  text-align: center;
+  z-index: 999;
+}
+h1 {
+  font-size: 2em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  margin-bottom: 0;
+  animation: slidein 1s ease;
+}
+
+@keyframes slidein {
+  0% {
+    margin-top: -100%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+section {
+  flex-direction: column;
+  background-color: transparent;
+  color: black;
+  padding: 5em;
+  padding-bottom: 0;
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+section p,
+h2 {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 1em;
+  line-height: 2em;
+}
+h2 {
+  animation: slidein 1.5s ease-in-out;
+}
+
+.d-flex {
+  display: block !important;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1em;
+  padding: 1em;
+  margin-bottom: 0;
+  background-color: tan;
+  color: whitesmoke;
+}
+
+.blk {
+  background-color: black;
+  color: white;
+  width: 300px;
+}
+
+.nav-link {
+  color: slategray;
+}
+.nav-link:active {
+  background-color: black;
+}
+.nav-tabs {
+  padding: 2em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  border-bottom: 8em solid tan;
+}
+nav {
+  margin: auto;
+  background-color: beige;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  justify-content: space-between;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+}
+
+nav.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.img-fluid {
+  width: auto;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.accordion {
+  width: auto;
+  background-color: transparent;
+  color: black;
+  padding: 2em;
+  padding-bottom: 0;
+  text-align: center;
+  margin: auto;
+}
+.accordion-item {
+  background-color: transparent;
+  color: black;
+  padding: 1em;
+  padding-bottom: 0;
+  text-align: center;
+}
+.accordion-button {
+  background-color: transparent;
+  color: black;
+  padding: 2em;
+  text-align: center;
+}
+
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 40%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+.bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+label {
+  padding: 2em;
+  width: 40%;
+  font-weight: bold;
+}

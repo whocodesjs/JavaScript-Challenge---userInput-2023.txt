@@ -1,0 +1,221 @@
+<!-- Jovain Chisholm 000905188 Feb 5, 2023  -->
+<!-- Interactive JavaScript Challenge: Put Your Input to the Test -->
+<!-- SA0001: I Jovain Chisholm, 000905188 certify that this material is
+ my original work. No other person's work has been used without due
+acknowledgement. I have not made my work available to anyone else.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="text/javascript" src="assets/js/functions.js"></script>
+    <title>Jovain Chisholm 000905188</title>
+  </head>
+  <body id="home">
+    <div class="container flex-column">
+      <header>
+        <h1>Jovain Chisholm</h1>
+      </header>
+    </div>
+    <nav>
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" aria-current="page" href="#home">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link navbar-brand" href="https://github.com/whocodesjs"
+            >Github</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section class="d-flex justify-content-center">
+      <h2>Interactive JavaScript Challenge: Put Your Input to the Test</h2>
+      <p>Unleash the Power of User Input</p>
+      <div class="accordion accordion-flush" id="accordionFlush">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne">
+              Group 1 - Question 3
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlush">
+            <div class="accordion-body flex">
+              <label for="q1_input"
+                >Please enter a positive numerical value to be interpreted as
+                the number of days. The input will be converted into years,
+                months, and days</label
+              >
+              <input
+                type="text"
+                id="q1_input"
+                name="q1_input"
+                onchange="convert()" />
+              <textarea id="q1_output" readonly cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo">
+              Group 1 - Question 2
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlush">
+            <div class="accordion-body flex">
+              <label for="q2_input"
+                >Please enter a numerical value to be interpreted as the length
+                of the side of a square:
+              </label>
+              <input
+                type="text"
+                id="q2_input"
+                name="q2_input"
+                onchange="square()" />
+              <textarea id="q2_output" readonly cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bottom">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree">
+              Group 2 - Question 1
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlush">
+            <div class="accordion-body flex">
+              <label for="q3_input"
+                >Please enter a single letter to determine if it is a
+                vowel:</label
+              >
+              <input
+                type="text"
+                id="q3_input"
+                name="q3_input"
+                onchange="vowelOrNot()" />
+              <textarea id="q3_output" readonly cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlush_2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour">
+              Group 2 - Question 3
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlush_2">
+            <div class="accordion-body flex">
+              <label for="q4_input"
+                >Please enter a positive integer to calculate its factorial
+                value:</label
+              >
+              <input
+                type="text"
+                id="q4_input"
+                name="q4_input"
+                onchange="factorial()" />
+              <textarea id="q4_output" readonly cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive">
+              Group 3 - Question 1
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlush_2">
+            <div class="accordion-body flex">
+              <label for="q5_input"
+                >Please enter a string consisting of only 0's and 1's and with a
+                length of 10 to 20 characters (inclusive ):
+              </label>
+              <input
+                type="text"
+                id="q5_input"
+                name="q5_input"
+                onchange="binaryToDecimal()" />
+              <textarea id="q5_output" readonly cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="d-flex justify-content-center">
+      <p>
+        © 2023, Jovain Chisholm,
+        <a href="https://www.mohawkcollege.ca" target="_blank"
+          >Mohawk College.</a
+        >
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
